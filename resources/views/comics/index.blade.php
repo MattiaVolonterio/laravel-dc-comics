@@ -4,6 +4,9 @@
 
 @section('main')
     <div class="container mt-3">
+
+        <a href="{{ route('comics.create') }}" class="btn btn-primary my-3">Inserisci un nuovo Fumetto</a>
+
         <h1>Comics List</h1>
 
         <table class="table">
