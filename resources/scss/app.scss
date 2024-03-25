@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// HEADER
+
+.nav-item {
+    .nav-link.active {
+        color: white;
+    }
+}
+
+// FOOTER
+
+footer {
+    height: 60px;
+    background-color: rgb(14, 14, 43);
+    color: white;
+}
+
+// MAIN
+
+main {
+    flex-grow: 1;
+}
