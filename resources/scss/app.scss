@@ -27,3 +27,8 @@ footer {
 main {
     flex-grow: 1;
 }
+
+.comics-image {
+    height: 600px;
+    object-fit: contain;
+}
