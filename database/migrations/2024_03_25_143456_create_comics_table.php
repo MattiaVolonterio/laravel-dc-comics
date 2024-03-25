@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('title', 100);
             $table->text('description')->nullable();
-            $table->string('thumb', 100)->nullable();
+            $table->string('thumb')->nullable();
             $table->string('price', 10);
-            $table->string('series', 30);
+            $table->string('series', 50);
             $table->date('sale_date');
             $table->enum('type', ['comic book', 'graphic novel']);
             $table->timestamps();
