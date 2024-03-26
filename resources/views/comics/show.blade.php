@@ -5,6 +5,7 @@
 @section('main')
     <div class="container mt-3">
         <a href="{{ route('comics.index') }}" class="btn btn-primary my-3">Torna alla lista</a>
+        <a href="{{ route('comics.edit', $comic) }}" class="btn btn-primary my-3">Modifica Dettagli</a>
         <h1>#{{ $comic->id }}: {{ $comic->title }}</h1>
 
         <div class="row">

@@ -8,6 +8,8 @@
     <title>{{ env('APP_NAME') }} - @yield('page_title')</title>
 
     @vite('resources/js/app.js')
+
+    @yield('css')
 </head>
 
 <body>
@@ -18,6 +20,8 @@
         </main>
         @include('partials.footer')
     </div>
+
+    @yield('modal')
 </body>
 
 </html>

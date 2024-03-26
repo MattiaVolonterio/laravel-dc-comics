@@ -18,7 +18,7 @@
                     <th scope="col">Type</th>
                     <th scope="col">Sale Date</th>
                     <th scope="col">Price</th>
-                    <th scope="col">More...</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -30,7 +30,10 @@
                         <td>{{ $comic->type }}</td>
                         <td>{{ $comic->sale_date }}</td>
                         <td>{{ $comic->price }}</td>
-                        <td><a href="{{ route('comics.show', $comic) }}">See more</a></td>
+                        <td>
+                            <a href="{{ route('comics.show', $comic) }}"><i class="fa-regular fa-eye"></i></a>
+                            <a href="{{ route('comics.edit', $comic) }}"><i class="fa-regular fa-pen-to-square"></i></a>
+                        </td>
                     </tr>
                 @empty
                     <tr>
@@ -42,4 +45,10 @@
 
         {{ $comics->links() }}
     </div>
+@endsection
+
+@section('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endsection
