@@ -5,6 +5,7 @@
 @section('main')
     <div class="container mt-3">
         <a href="{{ route('comics.index') }}" class="btn btn-primary my-3">Torna alla lista</a>
+        <a href="{{ route('comics.show', $comic) }}" class="btn btn-primary my-3">Torna al fumetto</a>
         <h1 class="mb-3">Modifica il fumetto {{ $comic->title }}</h1>
 
         <form action="{{ route('comics.update', $comic) }}" method="POST">
