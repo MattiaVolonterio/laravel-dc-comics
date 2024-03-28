@@ -61,8 +61,9 @@
                     <label for="type" class="form-label">Tipo</label>
                     <select class="form-select @error('type') is-invalid @enderror" id="type" name="type"
                         value="{{ old('type') }}" required>
-                        <option value="comic book">Comic Book</option>
-                        <option value="graphic novel">Graphic Novel</option>
+                        <option value="comic book" @if (old('type') == 'comic book') selected @endif>Comic Book</option>
+                        <option value="graphic novel" @if (old('type') == 'graphic novel') selected @endif>Graphic Novel
+                        </option>
                     </select>
                     @error('type')
                         <div class="invalid-feedback">{{ $message }}</div>
